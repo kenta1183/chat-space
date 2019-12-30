@@ -1,12 +1,143 @@
-.main-chat {
+main-chat {
   width: calc(100vw - 300px);
-  background-color: red;
-  height: 100vh;
+  
+
+}
+.main-header {
+  background-color: #ffffff;
+  height: 100px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0 40px;
+}
+
+.left-header {
+  float: left;
+}
+
+.left-heder-title {
+  color: #333333;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-left: 40px;
+}
+
+.left-header-members {
+  color: #999999;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 40px;
+  
+}
+
+.right-header {
+  margin: 28px 40px 32px 0px;
   float: right;
   
 }
 
-.main-header {
-  background-color: #ffffff;
-  height: 100px;
+.edit-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  display: table-cell;
+  color: #38aef0;
+  border: 1px solid #00bfff;
+}
+
+.messages {
+  background-color: #fafafa;
+  padding-top: 35px;
+  height: calc(100vh - 190px);
+}
+
+.message {
+  margin-bottom: 46px;
+  
+}
+
+.upside-message {
+  display: flex;
+ 
+}
+
+.user-name {
+  font-size: 16px;
+  color: #333333;
+  margin-left: 40px;
+}
+
+.message-date {
+  font-size: 12px;
+  color: #999999;
+  padding-left: 10px;
+}
+
+.downside-message {
+  display: flex;
+  padding-top: 12px;
+}
+
+.message-contents {
+  font-size: 14px;
+  color: #434a54;
+  margin-left: 40px;
+}
+
+
+.main-footer {
+  background-color: #d2d2d2;
+  height: 90px;
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 40px;
+      background-color: #ffffff;
+      position: relative;
+      width: 100%;
+}
+
+.text-form {
+  height: 50px;
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  
+}
+
+.image-form {
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  
+}
+
+.file-btn {
+  display: none;
+}
+
+.message-send {
+  background-color: #00bfff;
+  margin-right: 40px;
+  margin-left: 15px;
+  width: 100px;
+}
+
+.send-form {
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.send-btn {
+  display: none;
 }
