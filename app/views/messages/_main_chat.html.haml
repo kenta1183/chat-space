@@ -1,0 +1,58 @@
+.main-chat
+ .main-header
+  .left-header
+   .left-heder-title
+    sampleグループ
+   .left-header-members
+    MemberName
+  .right-header
+   = link_to "Edit","#",class:"edit-button"
+ .messages
+  .message
+   .upside-message
+    .user-name
+     KentaImai
+    .message-date
+     2019/12/30(Mon)04:39:33
+   .downside-message
+    .message-contents
+     テスト
+  .message
+   .upside-message
+    .user-name
+     KentaImai
+    .message-date
+     2019/12/30(Mon)04:39:33
+   .downside-message
+    .message-contents
+     テスト
+  .message
+   .upside-message
+    .user-name
+     KentaImai
+    .message-date
+     2019/12/30(Mon)04:39:33
+   .downside-message
+    .message-contents
+     テスト
+  .message
+   .upside-message
+    .user-name
+     KentaImai
+    .message-date
+     2019/12/30(Mon)04:39:33
+   .downside-message
+    .message-contents
+     テスト
+
+.main-footer
+ .form
+  %input{type: "text", class: "text-form" ,placeholder: "type a message"}
+   %label{class: "image-form"}
+    = icon('fas', 'image')
+    %input{type: "file", class: "file-btn"}
+ .message-send
+  %label{class: "send-form"}
+   %p
+    Send
+   %input{type: "submit", class: "send-btn", value:"Send"}
