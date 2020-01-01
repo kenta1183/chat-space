@@ -8,21 +8,13 @@
       = icon("fas", "cog", class: "icon")
    %ul.header-lists
     %li.list
-     = link_to do
+     = link_to new_group_path do
       = icon("fas", "edit", class: "icon")
  .groups
-  .group
-   .group-name
-    グループ名
-   .group-message
-    新着メッセージ
-  .group
-   .group-name
-    グループ名
-   .group-message
-    新着メッセージ
-  .group
-   .group-name
-    グループ名
-   .group-message
-    新着メッセージ
+  - current_user.groups.each do |group|
+   .group
+    = link_to '#' do
+     .group-name
+      = group.name
+     .group-message
+      メッセージはまだありません。
