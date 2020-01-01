@@ -1,10 +1,10 @@
 .side-bar
  .side-header
   %h3.side-box.header-name
-   ユーザーネーム
+   = current_user.name
    %ul.header-lists
     %li.list
-     = link_to do
+     = link_to edit_user_path(current_user) do
       = icon("fas", "cog", class: "icon")
    %ul.header-lists
     %li.list
