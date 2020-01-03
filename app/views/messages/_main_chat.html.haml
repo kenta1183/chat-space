@@ -2,57 +2,19 @@
  .main-header
   .left-header
    .left-heder-title
-    sampleグループ
+    = @group.name
    .left-header-members
-    MemberName
+    - @group.users.each do |user|
+     = user.name
   .right-header
-   = link_to "Edit","#",class:"edit-button"
+   = link_to "Edit", edit_group_path(@group.id),class:"edit-button"
  .messages
-  .message
-   .upside-message
-    .user-name
-     KentaImai
-    .message-date
-     2019/12/30(Mon)04:39:33
-   .downside-message
-    .message-contents
-     テスト
-  .message
-   .upside-message
-    .user-name
-     KentaImai
-    .message-date
-     2019/12/30(Mon)04:39:33
-   .downside-message
-    .message-contents
-     テスト
-  .message
-   .upside-message
-    .user-name
-     KentaImai
-    .message-date
-     2019/12/30(Mon)04:39:33
-   .downside-message
-    .message-contents
-     テスト
-  .message
-   .upside-message
-    .user-name
-     KentaImai
-    .message-date
-     2019/12/30(Mon)04:39:33
-   .downside-message
-    .message-contents
-     テスト
-
+  = render @messages
 .main-footer
  .form
-  %input{type: "text", class: "text-form" ,placeholder: "type a message"}
-   %label{class: "image-form"}
-    = icon('fas', 'image')
-    %input{type: "file", class: "file-btn"}
- .message-send
-  %label{class: "send-form"}
-   %p
-    Send
-   %input{type: "submit", class: "send-btn", value:"Send"}
+  = form_for [@group, @message] do |f|
+   = f.text_field :content, class: 'form__text-message', placeholder: "type a messeage"
+   = f.label :image, class: 'form__image-btn' do
+    = icon("far", "image")
+    = f.file_field :image, class: 'hidden'
+   = f.submit "Send", class:"form__send-btn"
