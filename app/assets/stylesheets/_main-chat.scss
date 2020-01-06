@@ -53,22 +53,21 @@ main-chat {
   background-color: #fafafa;
   padding-top: 35px;
   height: calc(100vh - 190px);
+  overflow: scroll;
 }
 
 .message {
   margin-bottom: 46px;
-  
 }
 
 .upside-message {
   display: flex;
- 
+  margin-left: 40px;
 }
 
 .user-name {
   font-size: 16px;
   color: #333333;
-  margin-left: 40px;
 }
 
 .message-date {
@@ -80,18 +79,15 @@ main-chat {
 .downside-message {
   display: flex;
   padding-top: 12px;
+  margin-left: 40px;
 }
 
 .message-contents {
   font-size: 14px;
   color: #434a54;
-  margin-left: 40px;
  
 }
 
-.downside-message-image {
-  margin-left: 40px;
-}
 
 .main-footer {
   background-color: #d2d2d2;
@@ -124,7 +120,7 @@ main-chat {
     right: 200px;
     font-size: 25px;
     }
-  &__send-btn{
+  &__submit{
   height: 50px;
   width: 100px;
   background-color: #38aef0;
