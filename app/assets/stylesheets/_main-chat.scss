@@ -58,11 +58,12 @@ main-chat {
 
 .message {
   margin-bottom: 46px;
+  margin-left: 40px;
 }
 
 .upside-message {
   display: flex;
-  margin-left: 40px;
+  
 }
 
 .user-name {
@@ -79,7 +80,7 @@ main-chat {
 .downside-message {
   display: flex;
   padding-top: 12px;
-  margin-left: 40px;
+  
 }
 
 .message-contents {
