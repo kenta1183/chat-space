@@ -37,7 +37,7 @@ $(function(){
          </div>
        </div>`
      return html;
-    } else if(message.content) {
+    } else if(message.image) {
       var html =
        `<div class="message" data-message-id=${message.id}>
           <div class="upside-message">
@@ -51,7 +51,6 @@ $(function(){
           <div class="downside-message">
            <img class="downside-message-image" src=${message.image}>
           </div>
-         
         </div>`
       return html;
    };
