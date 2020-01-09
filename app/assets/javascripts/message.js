@@ -1,13 +1,12 @@
 $(function(){ 
-  
   function buildHTML(message){
-    if ( message.image && message.body) {
+    if ( message.image && message.content) {
      var html =
       `<div class="message" data-message-id=${message.id}>
          <div class="upside-message">
            <div class="message.user.name">
              ${message.user_name}
-           </div>
+             </div>
            <div class="message-date">
              ${message.created_at}
            </div>
@@ -17,7 +16,7 @@ $(function(){
              ${message.content}
            </p>
          </div>
-         <img class="downside-message-image" src=${message.image} >
+         <img class="downside-message-image" src=${message.image}>
        </div>`
      return html;
    } else if(message.content) {
@@ -44,14 +43,15 @@ $(function(){
           <div class="upside-message">
             <div class="message.user.name">
               ${message.user_name}
-            </div>
+              </div>
             <div class="message-date">
               ${message.created_at}
             </div>
           </div>
           <div class="downside-message">
-           <img class="downside-message-image" src=${message.image} >
+           <img class="downside-message-image" src=${message.image}>
           </div>
+         
         </div>`
       return html;
    };
